@@ -3,6 +3,7 @@
 @import 'libs';
 @import 'fonts';
 
+//start header
 .header__top-inner {
   display: flex;
   justify-content: space-between;
@@ -38,7 +39,7 @@
 }
 
 .header__menu {
-  background-color: $background-color;
+  background-color: $darkgrey-color;
 }
 
 .menu {
@@ -62,6 +63,8 @@
   }
 }
 
+//end header
+//start search
 .search {
   background-repeat: no-repeat;
   background-size: cover;
@@ -92,6 +95,7 @@
     max-width: 670px;
     margin: 0 auto;
     position: relative;
+
     input {
       display: block;
       width: 100%;
@@ -109,6 +113,7 @@
         font-weight: 500;
       }
     }
+
     button {
       position: absolute;
       border: none;
@@ -119,6 +124,137 @@
   }
 }
 
+//end search
+//start products
+.products {
+  padding: 110px 0;
+  background-color: $grey-color;
+}
 
+.products__inner-btn {
+  text-align: center;
+  margin-bottom: 60px;
 
+  button {
+    padding: 12px 21px;
+    border: none;
+    background-color: #fff;
+    color: $darkgrey-color;
+    cursor: pointer;
+    outline: none;
+
+    & + button {
+      margin-left: 5px;
+    }
+
+    &.mixitup-control-active {
+      background-color: $red-color;
+      color: #fff;
+    }
+  }
+}
+
+.products__inner-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product__item {
+  max-width: 442px;
+  width: 100%;
+  box-shadow: 0 1px 2px 0 rgba(205, 214, 222, 0.75);
+  margin-bottom: 30px;
+
+  &-img {
+    min-height: 250px;
+    background-repeat: no-repeat;
+    display: block;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+    min-height: 90px;
+    align-items: center;
+    font-weight: 500;
+    border-bottom: 1px solid #e7ecf2;
+  }
+
+  &-name {
+    max-width: 310px;
+  }
+
+  &-title {
+    color: $darkgrey-color;
+    font-size: 18px;
+    display: block;
+  }
+
+  &-category {
+    display: block;
+    font-size: 14px;
+    color: $green-color;
+  }
+
+  &-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: $darkgrey-color;
+  }
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 10px 30px;
+  }
+
+  &-author {
+    display: flex;
+    align-items: center;
+
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-position: center;
+      display: inline-block;
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-right: 14px;
+    }
+
+    span {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}
+
+.products__bottom-btn {
+  margin: 45px 5px 0;
+  text-align: center;
+
+  button {
+    margin: 45px 5px 0;
+    box-shadow: 0 1px 3px 0 rgba(204, 216, 228, 0.75);
+    border: none;
+    background-color: #fff;
+    color: $darkgrey-color;
+    padding: 20px 30px;
+    cursor: pointer;
+
+    &.mixitup-control-active {
+      background-color: $red-color;
+      color: #fff;
+    }
+  }
+}
+
+//end products
 @import 'media';
