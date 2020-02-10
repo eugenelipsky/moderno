@@ -1,19 +1,65 @@
 @import 'vars';
+@import 'global';
 @import 'libs';
 @import 'fonts';
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
 }
 
-html {
-    box-sizing: inherit;
+.header__text {
+  margin-left: auto;
+  margin-right: 50px;
+
+  span {
+    color: $red-color;
+  }
 }
 
+.header__btn {
+  padding: 4px;
+  width: 72px;
+  border-radius: 4px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+}
 
-//Code goes here
+.header__btn-login {
+  background-color: $green-color;
+}
+
+.header__btn-register {
+  background-color: $red-color;
+  margin-left: 7px;
+}
+
+.header__menu {
+  background-color: $background-color;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.menu__list {
+  li {
+    display: inline-block;
+
+    & + li {
+      margin-left: 30px;
+    }
+  }
+  a {
+    color: #fff;
+    font-size: 14px;
+  }
+}
 
 
 @import 'media';
