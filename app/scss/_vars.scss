@@ -3,3 +3,13 @@ $red-color: #e74c3c;
 $green-color: #8bc34a;
 $darkgrey-color: #263238;
 $grey-color: #f4f6f5;
+
+@mixin f500 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+}
+
+@mixin f700 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
