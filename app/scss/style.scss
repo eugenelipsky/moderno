@@ -274,10 +274,12 @@
   .slick-dots {
     text-align: center;
     margin-top: 50px;
+
     li {
       display: inline-block;
       margin-left: 3px;
       margin-right: 3px;
+
       &.slick-active {
         button {
           background-color: $green-color;
@@ -297,10 +299,9 @@
     }
   }
 }
+
 //product slider end
 //product advantages start
-//product advantages end
-
 .advantages {
   background-color: $darkgrey-color;
   padding: 110px 0;
@@ -379,5 +380,49 @@
     width: 86px;
   }
 }
+
+//product advantages end
+//product author start
+
+.author {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-box {
+    max-width: 650px;
+    width: 100%;
+    min-height: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $green-color;
+  }
+
+  &-title {
+    font-size: 30px;
+    line-height: 30px;
+    color: #fff;
+    margin-right: 45px;
+    max-width: 260px;
+    span {
+      @include f700;
+    }
+  }
+
+  &-link {
+    font-size: 18px;
+    line-height: 36px;
+    padding: 14px 40px;
+    background-color: #fff;
+    color: $darkgrey-color;
+  }
+}
+
+//product author end
 
 @import 'media';
