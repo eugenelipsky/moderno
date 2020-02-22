@@ -32,6 +32,8 @@ body {
   font-size: 15px;
   line-height: 24px;
   color: $text-color;
+  overflow-x: hidden;
+  //width: 100vw;
 }
 
 .wrapper {
@@ -118,5 +120,19 @@ body {
     a {
       color: #b0bec5;
     }
+  }
+}
+
+.angle-right {
+  position: relative;
+  padding-left: 15px;
+
+  &::before {
+    content: '\f105';
+    font-family: 'icomoon';
+    position: absolute;
+    left: 0;
+    color: $green-color;
+    font-size: 14px;
   }
 }
