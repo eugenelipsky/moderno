@@ -6,6 +6,11 @@ $grey-color: #f4f6f5;
 $orange-color: #ef6c00;
 $yellow-color: #fcb322;
 
+@mixin f300 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
 @mixin f500 {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
