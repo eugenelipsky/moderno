@@ -418,12 +418,12 @@
     box-shadow: 0 2px 2px 0 rgba(118, 174, 54, 0.75);
   }
 
-  .login__label-name::before{
-      content: '\f007';
+  .login__label-name::before {
+    content: '\f007';
   }
 
   .login__label-pass::before {
-      content: '\f023';
+    content: '\f023';
   }
 
   input {
@@ -1869,11 +1869,12 @@ button.icon-unsorted {
     @include f500;
   }
 }
+
 //single product page end
 //start page 404
 .page-404__wrapper,
 .about__wrapper,
-.contacts__wrapper{
+.contacts__wrapper {
   border: 1px solid #dcdcdc;
   background-color: #fff;
   margin-bottom: 150px;
@@ -1881,7 +1882,7 @@ button.icon-unsorted {
 
 .page-404__head,
 .about__head,
-.contacts__head{
+.contacts__head {
   font-size: 24px;
   color: #444;
   @include f500;
@@ -1937,6 +1938,7 @@ button.icon-unsorted {
   border-radius: 4px;
   margin-bottom: 100px;
 }
+
 //end page 404
 //start about page
 .about__inner {
@@ -1957,6 +1959,7 @@ button.icon-unsorted {
     color: #707070;
   }
 }
+
 //end about page
 
 //start contact page
@@ -2042,6 +2045,7 @@ button.icon-unsorted {
 
 .contacts__form {
   width: 100%;
+
   input {
     border: none;
     height: 43px;
@@ -2086,6 +2090,7 @@ button.icon-unsorted {
     width: 190px;
   }
 }
+
 //end contact page
 //start settings page
 .settings {
@@ -2130,7 +2135,7 @@ button.icon-unsorted {
     }
   }
 
-  .tabs .tab+.tab {
+  .tabs .tab + .tab {
     border-left: none;
   }
 
@@ -2190,5 +2195,223 @@ button.icon-unsorted {
     color: #707070;
   }
 }
+
 //end settings page
+//start profile page
+.profile__inner {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.profile__aside {
+  margin-right: 30px;
+  max-width: 270px;
+  width: 100%;
+
+  & .footer__social-link {
+    margin-bottom: 40px;
+  }
+}
+
+.profile__content {
+  width: 100%;
+}
+
+.profile__status {
+  font-size: 13px;
+  color: #707070;
+  border: 1px solid #d6d6d6;
+  padding: 6px 9px 5px 30px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 12px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+  }
+}
+
+.profile-on {
+  &::before {
+    background-color: $green-color;
+  }
+}
+
+.profile-off {
+  &::before {
+    background-color: $red-color;
+  }
+}
+
+.profile__aside-btn {
+  margin-bottom: 13px;
+  text-align: center;
+}
+
+.profile__aside-message {
+  margin-bottom: 17px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  @include f500;
+  padding: 18px 10px;
+  position: relative;
+  background-color: $text-color;
+  box-shadow: 0 1px 2px 0 rgba(69, 90, 100, 0.75);
+
+  &::before {
+    content: '\f003';
+    font-family: 'icomoon';
+    position: absolute;
+    left: 60px;
+    top: 17px;
+  }
+}
+
+.profile__aside-following {
+  margin-bottom: 17px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  @include f700;
+  background-color: $green-color;
+  padding: 18px 10px;
+  box-shadow: 0 1px 2px 0 rgba(69, 90, 100, 0.75);
+}
+
+.profile__banner {
+  padding: 20px;
+  border: 1px solid #dedede;
+  background-color: #fff;
+  margin-bottom: 35px;
+}
+
+.profile__banner-img {
+  background-image: url('../img/content/profile_banner.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 332px;
+  background-position: center;
+}
+
+.profile__items {
+  display: flex;
+  border: 1px solid #dedede;
+}
+
+.profile__item {
+  width: 25%;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 5px 17px;
+
+  & + .profile__item {
+    border-left: 1px solid #dedede;
+  }
+}
+
+.product__item-title {
+  font-size: 14px;
+  color: $darkgrey-color;
+  @include f500;
+}
+
+.profile__item-content {
+  font-size: 14px;
+  color: #707070;
+  @include f500;
+
+  &.profile__item-sales {
+    color: $darkgrey-color;
+  }
+}
+
+.profile-settings {
+  .product-one__tabs.settings__tabs {
+    .tabs {
+      span {
+        font-family: 'Roboto', sans-serif !important;
+        font-weight: 500;
+        color: #707070;
+        position: relative;
+
+        &.active::before {
+          color: $green-color;
+        }
+
+        &::before {
+          position: absolute;
+          left: 27px;
+          top: 16px;
+          color: #d0d0d0;
+          font-size: 14px;
+          font-family: 'icomoon';
+        }
+      }
+    }
+  }
+}
+
+.personal-box {
+  background-color: #fff;
+  padding: 35px 40px 25px;
+  border: 1px solid #dedede;
+}
+
+.personal-box__title {
+  margin-bottom: 25px;
+  @include f700;
+  font-size: 20px;
+  color: $darkgrey-color;
+}
+
+.personal-box__text {
+  margin-bottom: 20px;
+
+  p {
+    color: #707070;
+  }
+}
+
+.personal-box__item-head {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.personal-box__item-name {
+  @include f500;
+  font-size: 16px;
+  color: $darkgrey-color;
+  font-style: italic;
+}
+
+.personal-box__item-number {
+  @include f700;
+  font-size: 16px;
+  color: $darkgrey-color;
+}
+
+.personal-box__item-line {
+  height: 15px;
+  background-color: #f4f4f4;
+  border-radius: 3px;
+  margin-bottom: 23px;
+
+  span {
+    display: block;
+    border-radius: 3px;
+    height: 15px;
+    background-image: url('../img/prog-bar.jpg');
+    background-repeat: repeat;
+  }
+}
+
+//end profile page
 @import 'media';
