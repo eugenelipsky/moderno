@@ -68,6 +68,8 @@ $(function(){
         return false;
     });
 
+    $('input[type="file"], select').styler();
+
     var mixer = document.querySelector(".products__inner-box");
     if (mixer) {
         mixer = mixitup('.products__inner-box');
