@@ -366,6 +366,7 @@
 //end header
 //start modal
 #modal {
+  display: none;
   background-color: $green-color;
   max-width: 730px;
   width: 100%;
@@ -1871,14 +1872,16 @@ button.icon-unsorted {
 //single product page end
 //start page 404
 .page-404__wrapper,
-.about__wrapper{
+.about__wrapper,
+.contacts__wrapper{
   border: 1px solid #dcdcdc;
   background-color: #fff;
   margin-bottom: 150px;
 }
 
 .page-404__head,
-.about__head{
+.about__head,
+.contacts__head{
   font-size: 24px;
   color: #444;
   @include f500;
@@ -1954,6 +1957,134 @@ button.icon-unsorted {
     color: #707070;
   }
 }
-
 //end about page
+
+//start contact page
+.contacts__inner {
+  padding: 35px 40px 15px;
+}
+
+.contacts__head {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.contacts__map {
+  margin-bottom: 50px;
+
+  iframe {
+    width: 100%;
+    height: 415px;
+  }
+}
+
+.contacts__box {
+  display: flex;
+}
+
+.contacts__info {
+  margin-right: 30px;
+  max-width: 330px;
+  width: 100%;
+}
+
+.contacts__info-item {
+  margin-bottom: 30px;
+
+}
+
+.contacts__info-title {
+  padding-bottom: 20px;
+  position: relative;
+  font-size: 20px;
+  @include f500;
+  color: $darkgrey-color;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif !important;
+
+  &::after {
+    content: '';
+    width: 44px;
+    height: 4px;
+    background-color: $green-color;
+    left: 40px;
+    bottom: 0;
+    position: absolute;
+  }
+
+  &::before {
+    color: $green-color;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    font-family: 'icomoon';
+  }
+}
+
+.contacts__info-content {
+  padding-left: 40px;
+  color: #707070;
+  max-width: 230px;
+}
+
+.contacts__form-title {
+  font-size: 24px;
+  @include f500;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contacts__form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__form {
+  width: 100%;
+  input {
+    border: none;
+    height: 43px;
+    padding-left: 17px;
+    padding-right: 17px;
+    background-color: #f1f4f5;
+    width: 350px;
+    margin-bottom: 30px;
+
+
+    &::placeholder {
+      font-size: 15px;
+      color: #7a7a7a;
+    }
+  }
+
+  textarea {
+    border: none;
+    padding: 13px 17px;
+    background-color: #f1f4f5;
+    height: 190px;
+    width: 100%;
+    display: block;
+    resize: none;
+    margin-bottom: 23px;
+
+    &::placeholder {
+      font-size: 15px;
+      color: #7a7a7a;
+    }
+  }
+
+  button {
+    border: none;
+    background-color: $green-color;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    @include f700;
+    padding: 20px 5px;
+    width: 190px;
+  }
+}
+//end contact page
 @import 'media';
