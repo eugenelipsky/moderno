@@ -1535,16 +1535,16 @@ Build date: 2019-12-19 16:51:02
   font-size: 11px;
 }
 
-body.compensate-for-scrollbar {
-    overflow: hidden;
-}
-
 @function max($numbers...) {
-  @return m#{a}x(#{$numbers})
+@return m#{a}x(#{$numbers})
 }
 
 @function min($numbers...) {
-  @return m#{i}n(#{$numbers})
+@return m#{i}n(#{$numbers})
+}
+
+body.compensate-for-scrollbar {
+    overflow: hidden;
 }
 
 .fancybox-active {
